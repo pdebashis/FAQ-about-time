@@ -2,12 +2,12 @@ import java.text.SimpleDateFormat
 import java.time.ZoneId
 import java.util.Date
 
-val time = new Date()								               //or system.currentTime() for current time
-val epoch = time.getTime()/1000L					               //time to epoch
-time = new Date(1529611151)							              //epoch to time
+val time = new Date()                                       //or system.currentTime() for current time
+val epoch = time.getTime()/1000L                            //time to epoch
+time = new Date(1529611151)                                 //epoch to time
 
-time = new Date(epoch + (1000*10))					                 //add 10 seconds
-time = new Date(epoch + (1000*60*10))				               //add 10 minutes(active support)
+time = new Date(epoch + (1000*10))                          //add 10 seconds
+time = new Date(epoch + (1000*60*10))                       //add 10 minutes(active support)
 
 val d = new Date().toInstant.atZone(ZoneId.of("UTC"))				//convert to UTC
 val e = new SimleDateFormat("Z").format(time)                        //get the timezone
