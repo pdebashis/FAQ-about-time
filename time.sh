@@ -1,6 +1,6 @@
 date			#or Time.now for current time
 date +%s 		#time to epoch
-date -d @$1588379398	#epoch to time
+date -d @1588379398	#epoch to time
 
 #add 10 seconds
 #add 10 minutes(active support)
